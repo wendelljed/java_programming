@@ -52,6 +52,16 @@ public class Main {
             System.out.println(w);
         }
         //while
+        int r = 0;
+        while (r < 20) {
+            System.out.println(r);
+            r++;
+        }
         //do..while
+        int h=1;
+        do{
+            System.out.println(h);
+            h++;
+        }while(h<=10);
     }
 }
