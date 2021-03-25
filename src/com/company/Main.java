@@ -47,8 +47,8 @@ public class Main {
                 break;
         }
         //for loops
-        String[] cars = {"Suzuki", "Toyota", "Mazda", "Nissan"};
-        for (String w : cars) {
+        String[] colors = {"Red", "Blue", "Green", "Brown"};
+        for (String w : colors) {
             System.out.println(w);
         }
         //while
