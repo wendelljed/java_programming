@@ -25,29 +25,16 @@ public class Main {
     System.out.println(isTrueorFalse);
 
     //switch
-        int day = 7;
+        int day;
+        day = 7;
         switch (day) {
-            case 1:
-                System.out.println("Monday");
-                break;
-            case 2:
-                System.out.println("Tuesday");
-                break;
-            case 3:
-                System.out.println("Wednesday");
-                break;
-            case 4:
-                System.out.println("Thursday");
-                break;
-            case 5:
-                System.out.println("Friday");
-                break;
-            case 6:
-                System.out.println("Saturday");
-                break;
-            case 7:
-                System.out.println("Sunday");
-                break;
+            case 1 -> System.out.println("Monday");
+            case 2 -> System.out.println("Tuesday");
+            case 3 -> System.out.println("Wednesday");
+            case 4 -> System.out.println("Thursday");
+            case 5 -> System.out.println("Friday");
+            case 6 -> System.out.println("Saturday");
+            case 7 -> System.out.println("Sunday");
         }
         //for loops
         String[] colors = {"Red", "Blue", "Green", "Brown"};
@@ -154,14 +141,82 @@ public class Main {
         System.out.println(mySecondDouble);
         System.out.println(mySecondShort);
 
+        //Condition
+        if(20>18){
+            System.out.println("20 is greater than 18");
+        } else{System.out.println("Again");
+        }
+        //
+        int time =18;
+        String resultA=(time <18 )? "Good Day.": "Good Morning";
+        System.out.println(resultA);
+
+    //Switch
+        int adlaw = 5;
+
+        switch (adlaw){
+
+        case 1:
+            System.out.println("Monday");
+            break;
+        case 2:
+            System.out.println("Tuesday");
+            break;
+        case 3:
+            System.out.println("Wednesday");
+            break;
+        case 4:
+            System.out.println("Thursday");
+            break;
+        case 5:
+            System.out.println("Friday");
+            break;
+        case 6:
+            System.out.println("Saturday");
+            break;
+        case 7:
+            System.out.println("Sunday");
+            break;
+        }
+    // While Loop
+
+        int loop = 0;
+        while (loop < 10) {
+            System.out.print("["+loop+"]");
+            loop++;
+            System.out.println();
+        }
+    // While Loop
+
+        Scanner input = new Scanner( System.in );
+        System.out.print("Enter a number : ");
+        int num= input.nextInt();
+
+        while{}
 
 
 
-        //Scanner input = new Scanner( System.in );
-        //System.out.print("Enter a decimal number : ");
-        //int num =input.nextInt();
 
-        //String str = Integer.toHexString(num);
-        //System.out.println("Decimal to Hexadecimal: "+str);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //Scanner input = new Scanner( System.in );
+            //System.out.print("Enter a decimal number : ");
+            //int num =input.nextInt();
+
+            //String str = Integer.toHexString(num);
+            //System.out.println("Decimal to Hexadecimal: "+str);
+
     }
 }
