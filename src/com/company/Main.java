@@ -192,7 +192,7 @@ public class Main {
         System.out.print("Enter a number : ");
         int num= input.nextInt();
 
-        while{}
+
 
 
 
