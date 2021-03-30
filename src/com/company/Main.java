@@ -200,7 +200,7 @@ public class Main {
                 i++;
                 System.out.println(i);
         }
-        System.out.println("Sum of given series is : "+result);
+        System.out.println("Sum is : "+result);
 
 
 
