@@ -46,7 +46,7 @@ public class Main {
         }
         //while
         int r = 0;
-        while (r < 20) {
+        while (r < 10) {
             System.out.println(r);
             r++;
         }
@@ -128,7 +128,7 @@ public class Main {
 
         byte number1 = 5;
         //  Widening Casting
-        //      byte -> short -> char -> int -> long -> float -> double
+        //  byte -> short -> char -> int -> long -> float -> double
 
         short myShort = 9;
         double myDouble = myShort;
@@ -180,29 +180,40 @@ public class Main {
         while (loop < 10) {
             System.out.print("["+loop+"]");
             loop++;
-
-
         }
+
         // While Loop
 
-        Scanner in=new Scanner(System.in);
+    //    Scanner in=new Scanner(System.in);
+    //    System.out.println();
+    //    System.out.print("Enter a number : ");
+    //    int num=in.nextInt();
+    //    int i=1, j=1, sum=0;
+
+    //    while(i<=num)
+    //    {
+    //            sum=sum+j;
+    //            System.out.println(sum);
+    //            j++;
+    //            System.out.println(j);
+    //            i++;
+    //            System.out.println(i);
+    //    }
+    //    System.out.println("Sum is : "+sum);
+
+        // Do While
+
+        Scanner input=new Scanner(System.in);
         System.out.println();
-        System.out.println("Enter a number : ");
-        int num=in.nextInt();
-        int i=1,j=1;
-        int result=0;
-        while(i<=num)
-        {
-                result=result+j;
-                System.out.println(result);
-                j++;
-                System.out.println(j);
-                i++;
-                System.out.println(i);
-        }
-        System.out.println("Sum is : "+result);
+        System.out.print("Enter a number :");
+        int numb=input.nextInt();
+        int q=1;
 
+        do{
+            System.out.print(q*2+"  ");
+            q++;
+           }while(q<=numb);
 
-
+        // For Loop
     }
 }
