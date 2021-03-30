@@ -175,7 +175,6 @@ public class Main {
 
     // While Loop
 
-
         int loop = 0;
         while (loop < 10) {
             System.out.print("["+loop+"]");
@@ -203,17 +202,35 @@ public class Main {
 
         // Do While
 
-        Scanner input=new Scanner(System.in);
+    //    Scanner input=new Scanner(System.in);
+    //    System.out.println();
+    //    System.out.print("Enter a number :");
+    //    int numb=input.nextInt();
+    //    int q=1;
+
+    //    do{
+    //        System.out.print(q*2+"  ");
+    //        q++;
+    //       }while(q<=numb);
+
+        // For Loop Fabonacci Sequence
+
+        Scanner inp=new Scanner(System.in);
         System.out.println();
         System.out.print("Enter a number :");
-        int numb=input.nextInt();
-        int q=1;
+        int count=inp.nextInt();
+        int n1=0, n2=1, n3, y;
 
-        do{
-            System.out.print(q*2+"  ");
-            q++;
-           }while(q<=numb);
+        System.out.print(+n2+"");
 
-        // For Loop
+        for(y=2;y<=count;y++){
+            n3=n1+n2;
+            System.out.print(" "+n3);
+            n1=n2;
+            n2=n3;
+
+        }
+
+
     }
 }
