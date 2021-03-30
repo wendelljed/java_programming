@@ -6,25 +6,25 @@ public class Main {
 
     public static void main(String[] args) {
 
-        byte byteVariable = 127;
-        short mediumRangeDecimalVariable = 32767;
-        int wholeNumbers = 122;
-        long largeDecimalNumbers = -12;
-        float numberWithDecimalPlaces = 8.3f ;
-        double veryLargeNumberWithDecimalPlaces = 12312312.1232;
-        char singleCharacter = '\u0041';
-        boolean isTrueorFalse = true;
+    byte byteVariable = 127;
+    short mediumRangeDecimalVariable = 32767;
+    int wholeNumbers = 122;
+    long largeDecimalNumbers = -12;
+    float numberWithDecimalPlaces = 8.3f ;
+    double veryLargeNumberWithDecimalPlaces = 12312312.1232;
+    char singleCharacter = '\u0041';
+    boolean isTrueorFalse = true;
 
-        System.out.println(byteVariable);
-        System.out.println(mediumRangeDecimalVariable);
-        System.out.println(wholeNumbers);
-        System.out.println(largeDecimalNumbers);
-        System.out.println(numberWithDecimalPlaces);
-        System.out.println(veryLargeNumberWithDecimalPlaces);
-        System.out.println(singleCharacter);
-        System.out.println(isTrueorFalse);
+    System.out.println(byteVariable);
+    System.out.println(mediumRangeDecimalVariable);
+    System.out.println(wholeNumbers);
+    System.out.println(largeDecimalNumbers);
+    System.out.println(numberWithDecimalPlaces);
+    System.out.println(veryLargeNumberWithDecimalPlaces);
+    System.out.println(singleCharacter);
+    System.out.println(isTrueorFalse);
 
-        //switch
+    //switch
         int day;
         day = 7;
         switch (day) {
@@ -151,7 +151,7 @@ public class Main {
         String resultA=(time <18 )? "Good Day.": "Good Morning";
         System.out.println(resultA);
 
-        //Switch
+    //Switch
         int adlaw = 5;
 
         switch (adlaw) {
@@ -163,32 +163,19 @@ public class Main {
             case 6 -> System.out.println("Saturday");
             case 7 -> System.out.println("Sunday");
         }
-        // While Loop
+    // While Loop
 
         int loop = 0;
         while (loop < 10) {
             System.out.print("["+loop+"]");
             loop++;
-
+            System.out.println();
         }
-        // While Loop
+    // While Loop
 
-        Scanner in=new Scanner(System.in);
-        System.out.println();
-        System.out.println("Enter a number : ");
-        int num=in.nextInt();
-        int i=1,j=1;
-        int result=0;
-        while(i<=num)
-        {
-                result=result+j;
-                System.out.println(result);
-                j++;
-                System.out.println(j);
-                i++;
-                System.out.println(i);
-        }
-        System.out.println("Sum of given series is : "+result);
+        Scanner input = new Scanner( System.in );
+        System.out.print("Enter a number : ");
+        int num= input.nextInt();
 
 
 
@@ -209,13 +196,12 @@ public class Main {
 
 
 
+            //Scanner input = new Scanner( System.in );
+            //System.out.print("Enter a decimal number : ");
+            //int num =input.nextInt();
 
-        //Scanner input = new Scanner( System.in );
-        //System.out.print("Enter a decimal number : ");
-        //int num =input.nextInt();
-
-        //String str = Integer.toHexString(num);
-        //System.out.println("Decimal to Hexadecimal: "+str);
+            //String str = Integer.toHexString(num);
+            //System.out.println("Decimal to Hexadecimal: "+str);
 
     }
 }
