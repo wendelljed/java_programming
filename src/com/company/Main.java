@@ -215,7 +215,7 @@ public class Main {
 
         // For Loop Fabonacci Sequence
 
-        Scanner inp=new Scanner(System.in);
+    /*    Scanner inp=new Scanner(System.in);
         System.out.println();
         System.out.print("Enter a number :");
         int count=inp.nextInt();
@@ -225,12 +225,38 @@ public class Main {
 
         for(y=2;y<=count;y++){
             n3=n1+n2;
-            System.out.print(" "+n3);
+            System.out.println(" "+n3);
             n1=n2;
             n2=n3;
 
+        } */
+
+        String[] names ={"Jesray", "Lapoy", "Garciano"};
+        System.out.println();
+        System.out.println(names[1]);
+        names[2] = "Shinya";
+
+        System.out.println(names[2]);
+        System.out.println(names.length);
+
+    for(int w=0; w< names.length; w++){
+        System.out.println(names[w]);
         }
 
+    for(String w:names){
+        System.out.println(w);
+    }
+    // for each loop JAVA
+
+        int[] numbers = {10, 3, 5, -20, 0, 23};
+        int add=0;
+
+        for (int num: numbers) {
+            add+=num;
+            System.out.print(num+" ");
+        }
+        System.out.println();
+        System.out.println("Sum is: "+add );
 
     }
 }
