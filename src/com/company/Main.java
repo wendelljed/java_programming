@@ -251,12 +251,14 @@ public class Main {
         int[] numbers = {10, 3, 5, -20, 0, 23};
         int add=0;
 
+
         for (int num: numbers) {
             add+=num;
             System.out.print(num+" ");
         }
         System.out.println();
         System.out.println("Sum is: "+add );
+
 
     }
 }
