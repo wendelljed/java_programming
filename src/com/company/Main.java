@@ -260,7 +260,7 @@ public class Main<words> {
      */
     // for each loop JAVA
 
-        int[] numbers = {10, 3, 5, -20, 0, 23};
+        /*int[] numbers = {10, 3, 5, -20, 0, 23};
         int add=0;
 
         System.out.println();
@@ -270,7 +270,7 @@ public class Main<words> {
         }
         System.out.println();
         System.out.println("Sum is: "+add );
-
+    */
     }
 
     static void myMethod() {
