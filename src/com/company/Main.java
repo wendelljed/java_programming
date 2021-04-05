@@ -6,29 +6,32 @@ public class Main {
 
     public static void main(String[] args) {
 
+    //    myMethod();
+    //    myMethod();
+    //    myMethod();
 
-        byte byteVariable = 127;
-        short mediumRangeDecimalVariable = 32767;
-        int wholeNumbers = 122;
-        long largeDecimalNumbers = -12;
-        float numberWithDecimalPlaces = 8.3f ;
-        double veryLargeNumberWithDecimalPlaces = 12312312.1232;
-        char singleCharacter = '\u0041';
-        boolean isTrueorFalse = true;
+    //    byte byteVariable = 127;
+    //    short mediumRangeDecimalVariable = 32767;
+    //    int wholeNumbers = 122;
+    //    long largeDecimalNumbers = -12;
+    //    float numberWithDecimalPlaces = 8.3f ;
+    //    double veryLargeNumberWithDecimalPlaces = 12312312.1232;
+    //    char singleCharacter = '\u0041';
+    //    boolean isTrueorFalse = true;
 
-        System.out.println(byteVariable);
-        System.out.println(mediumRangeDecimalVariable);
-        System.out.println(wholeNumbers);
-        System.out.println(largeDecimalNumbers);
-        System.out.println(numberWithDecimalPlaces);
-        System.out.println(veryLargeNumberWithDecimalPlaces);
-        System.out.println(singleCharacter);
-        System.out.println(isTrueorFalse);
+    //   System.out.println(byteVariable);
+    //    System.out.println(mediumRangeDecimalVariable);
+    //    System.out.println(wholeNumbers);
+    //    System.out.println(largeDecimalNumbers);
+    //    System.out.println(numberWithDecimalPlaces);
+    //    System.out.println(veryLargeNumberWithDecimalPlaces);
+    //    System.out.println(singleCharacter);
+    //    System.out.println(isTrueorFalse);
 
-        //switch
+        //SWITCH
 
 
-        int day;
+    /*    int day;
         day = 7;
         switch (day) {
             case 1 -> System.out.println("Monday");
@@ -38,9 +41,10 @@ public class Main {
             case 5 -> System.out.println("Friday");
             case 6 -> System.out.println("Saturday");
             case 7 -> System.out.println("Sunday");
-        }
+        } */
+
         //for loops
-        String[] colors = {"Red", "Blue", "Green", "Brown"};
+    /*    String[] colors = {"Red", "Blue", "Green", "Brown"};
         for (String w : colors) {
             System.out.println(w);
         }
@@ -68,19 +72,19 @@ public class Main {
         System.out.println("Subtraction result = "+ d);
         System.out.println("Multiplication result = "+ e);
         System.out.println("Division result = "+ f);
-
+    */
         //COMPARISON
 
-        System.out.println(a>b);
+    /*   System.out.println(a>b);
         System.out.println(a<b);
         System.out.println(a>=b);
         System.out.println(a<=b);
         System.out.println(a==b);
         System.out.println(a!=b);
-
+    */
         // Compound Assignment Operators
 
-        int number = 5;
+    /*    int number = 5;
         number += 3;
         System.out.println(number);
         number -= 3;
@@ -91,9 +95,9 @@ public class Main {
         System.out.println(number);
         number %= 7;
         System.out.println(number);
-
+    */
         //INCREMENT AND DECREMENT OPERATORS
-
+    /*
         int numberApples = 5;
         numberApples++;
 
@@ -125,8 +129,8 @@ public class Main {
         byte b4 = 127;
         b4 >>=3;
         System.out.println(b4);
-
-        byte number1 = 5;
+    */
+    /*    byte number1 = 5;
         //  Widening Casting
         //  byte -> short -> char -> int -> long -> float -> double
 
@@ -143,9 +147,9 @@ public class Main {
 
         System.out.println(mySecondDouble);
         System.out.println(mySecondShort);
-
+    */
         //Condition
-        if(20>18){
+    /*    if(20>18){
             System.out.println("20 is greater than 18");
         } else{System.out.println("Again");
         }
@@ -153,13 +157,13 @@ public class Main {
         int time =18;
         String resultA=(time <18 )? "Good Day.": "Good Morning";
         System.out.println(resultA);
-
+    */
 
         //Switch
 
     //Switch
 
-        int adlaw = 5;
+    /*    int adlaw = 5;
 
         switch (adlaw) {
             case 1 -> System.out.println("Monday");
@@ -170,17 +174,17 @@ public class Main {
             case 6 -> System.out.println("Saturday");
             case 7 -> System.out.println("Sunday");
         }
-
+    */
         // While Loop
 
     // While Loop
-
+    /*
         int loop = 0;
         while (loop < 10) {
             System.out.print("["+loop+"]");
             loop++;
         }
-
+    */
         // While Loop
 
     //    Scanner in=new Scanner(System.in);
@@ -230,7 +234,7 @@ public class Main {
             n2=n3;
 
         } */
-
+    /*
         String[] names ={"Jesray", "Lapoy", "Garciano"};
         System.out.println();
         System.out.println(names[1]);
@@ -246,6 +250,8 @@ public class Main {
     for(String w:names){
         System.out.println(w);
     }
+
+     */
     // for each loop JAVA
 
         int[] numbers = {10, 3, 5, -20, 0, 23};
@@ -261,4 +267,32 @@ public class Main {
 
 
     }
+
+    static void myMethod() {
+
+        System.out.println("My Method");
+    }
+
+    public static int countWords(String str)
+    {
+
+    }
+
+
+
+    public static int countVowels(String str)
+    {
+            int count = 0;
+            for (int i = 0; i < str.length(); i++)
+            {
+                if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i'
+                        || str.charAt(i) == 'o' || str.charAt(i) == 'u')
+                {
+                    count++;
+                }
+            }
+            return count;
+    }
+
+
 }
