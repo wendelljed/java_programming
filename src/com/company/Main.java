@@ -1,12 +1,18 @@
 package com.company;
 
+import java.util.Random;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
-public class Main {
+public class Main<words> {
 
     public static void main(String[] args) {
 
-    //    myMethod();
+          myMethod();
+          displaySentence();
+          System.out.println();
+          input();
+
     //    myMethod();
     //    myMethod();
 
@@ -257,14 +263,13 @@ public class Main {
         int[] numbers = {10, 3, 5, -20, 0, 23};
         int add=0;
 
-
+        System.out.println();
         for (int num: numbers) {
             add+=num;
             System.out.print(num+" ");
         }
         System.out.println();
         System.out.println("Sum is: "+add );
-
 
     }
 
@@ -273,26 +278,86 @@ public class Main {
         System.out.println("My Method");
     }
 
-    public static int countWords(String str)
-    {
-
+    public static void randomMaleName(){
+        String[] names = { "Liam", "Noah", "Oliver", "William", "Elijah", "Benjamin" };
+        Random Dice = new Random();
+        int n = Dice.nextInt(6);
+        System.out.print(names[n] +" ");
+    }
+    public static void randomFemaleName(){
+        String[] names = { "Olivia", "Emma", "Ava", "Sophia", "Isabelle", "Charlotte" };
+        Random Dice = new Random();
+        int n = Dice.nextInt(6);
+        System.out.print(names[n] +" ");
+    }
+    public static void randomRelationship(){
+        String[] names = { "Loves", "Hates", "Likes", "is mad with", "is angry with", "sympathizes with" };
+        Random Dice = new Random();
+        int n = Dice.nextInt(6);
+        System.out.print(names[n] +" ");
+    }
+    public static void displaySentence(){
+        randomMaleName();
+        randomRelationship();
+        randomFemaleName();
     }
 
+    static void input(){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input the string: ");
+        String str = in.nextLine();
+        str = str.toLowerCase();
 
-
-    public static int countVowels(String str)
-    {
-            int count = 0;
-            for (int i = 0; i < str.length(); i++)
+        System.out.print("Number of  Vowels in the string: " +count_Vowels(str)+"\n");
+        System.out.print("Number of  Consonants in the string: " +count_Words(str)+"\n");
+    }
+    public static int count_Vowels(String str){
+        int count = 0;
+        for (int i = 0; i < str.length(); i++)
+        {
+            if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i'|| str.charAt(i) == 'o' || str.charAt(i) == 'u')
             {
-                if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i'
-                        || str.charAt(i) == 'o' || str.charAt(i) == 'u')
-                {
-                    count++;
-                }
+                count++;
             }
-            return count;
+        }
+        return count;
+    }
+    public static int count_Words(String str){
+        int count = 0;
+
+        for (int i = 0; i < str.length(); i++)
+        {
+            if(str.charAt(i) >='a' && str.charAt(i)<='z')
+            {
+                if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i'|| str.charAt(i) == 'o' || str.charAt(i) == 'u')
+                {
+                    count--;
+                }
+                count++;
+            }
+    }
+        return count;
     }
 
+    /*static boolean isConsonant(char ch)
+    {
+        // To handle lower case
+        ch = Character.toUpperCase(ch);
+
+        return !(ch == 'A' || ch == 'E' ||
+                ch == 'I' || ch == 'O' ||
+                ch == 'U') && ch >= 65 && ch <= 90;
+    }
+
+    static int count_Words(String str)
+    {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++)
+
+            // To check is character is Consonant
+            if (isConsonant(str.charAt(i)))
+                ++count;
+        return count;
+    }*/
 
 }
